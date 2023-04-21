@@ -1,0 +1,107 @@
+/*Formato para celular*/
+
+.background {
+    background-image: url('../../public/img/fondo.jpg');
+    background-size: cover;
+    height: 100vh;
+
+
+}
+.logoTitle{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 5px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.logo {
+    width: 80px;
+    margin-left: -20px;
+    padding: 15px;
+}
+
+.logOut {
+    width: 80px;
+}
+
+.btnUp>img {
+    margin: 10px -70px 0 90px;
+    width: 25px;
+
+}
+
+.save {
+    margin: 10px -100px 0 100px;
+    width: 25px;
+}
+
+
+
+.inputnotetitle {
+    background-color: rgb(253, 195, 171);
+    border-color: rgb(253, 195, 171);
+    border-radius: 15px;
+    margin: 10px 0;
+    width: 200px;
+    height: 30px;
+}
+
+.inputnotedescription {
+    background-color: rgb(253, 195, 171);
+    border-color: rgb(253, 195, 171);
+    border-radius: 15px;
+    height: 90px;
+    width: 200px;
+}
+
+.inputnotetwotitle {
+    background-color: rgb(172, 255, 227);
+    border-color: rgb(172, 255, 227);
+    border-radius: 15px;
+    margin: 10px 0;
+    width: 200px;
+    height: 30px;
+}
+
+.inputnotetwodescription {
+    background-color: rgb(172, 255, 227);
+    border-color: rgb(172, 255, 227);
+    border-radius: 15px;
+    height: 100px;
+    width: 200px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.divnote {
+    background-color: lightsalmon;
+    border-color: lightsalmon;
+    border-radius: 15px;
+    width: 250px;
+    height: 200px;
+    box-shadow: 5px 5px 5px wheat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.divnotetwo {
+    background-color: aquamarine;
+    border-color: aquamarine;
+    border-radius: 15px;
+    width: 250px;
+    height: 200px;
+    box-shadow: 5px 5px 5px wheat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
