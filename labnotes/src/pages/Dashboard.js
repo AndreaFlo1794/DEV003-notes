@@ -19,7 +19,7 @@ export default function Dashboard() {
         logOut().then(() => {
             router.push('/Login')
         });
-    }
+    } 
 
     return (
         <div className={styles.background}>

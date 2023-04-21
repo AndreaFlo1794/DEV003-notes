@@ -23,7 +23,8 @@ export default function Register() {
         alert('Correo o contraseña inválida 😵')
       }
   })
-  }
+  } 
+  
 
   return (
     <div>

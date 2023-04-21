@@ -26,7 +26,6 @@ export const addANewPost = (customer, postUser, uidUser) => addDoc(collection(db
   postUser,
   uidUser,
   today: serverTimestamp(),
-  like: [],
 });
 export const printPost = (callback) => onSnapshot(query(collection(db, 'posts'), orderBy('today', 'desc')), callback);
 
