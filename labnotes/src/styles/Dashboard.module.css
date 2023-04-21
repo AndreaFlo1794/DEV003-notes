@@ -53,22 +53,8 @@
     width: 200px;
 }
 
-.inputnotetwotitle {
-    background-color: rgb(172, 255, 227);
-    border-color: rgb(172, 255, 227);
-    border-radius: 15px;
-    margin: 10px 0;
-    width: 200px;
-    height: 30px;
-}
 
-.inputnotetwodescription {
-    background-color: rgb(172, 255, 227);
-    border-color: rgb(172, 255, 227);
-    border-radius: 15px;
-    height: 100px;
-    width: 200px;
-}
+
 
 .container {
     display: flex;
@@ -92,16 +78,3 @@
 
 }
 
-.divnotetwo {
-    background-color: aquamarine;
-    border-color: aquamarine;
-    border-radius: 15px;
-    width: 250px;
-    height: 200px;
-    box-shadow: 5px 5px 5px wheat;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 20px;
-}
