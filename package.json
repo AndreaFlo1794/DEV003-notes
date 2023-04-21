@@ -1,8 +1,0 @@
-{
-  "devDependencies": {
-    "standard": "^17.0.0"
-  },
-  "dependencies": {
-    "next-firebase-auth": "0.15.0"
-  }
-}
