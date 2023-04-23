@@ -1,0 +1,62 @@
+.background {
+    background-image: url('../../public/img/fondo2.jpg');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logoTitle {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 5px;
+    font-size: 25px;
+    font-weight: bolder;
+    margin: -70px -15px 15px 90px;
+}
+
+.logo {
+    width: 90px;
+    margin-left: -20px;
+    padding: 15px;
+}
+
+.back {
+    margin: -90px 0px 0 680px;
+    width: 100px;
+
+}
+.container {
+    background-color: #fdfd96;
+    border: 1px solid #fdfd96;
+    box-shadow: 1px 1px 1px 1px #f7f7b3;
+    border-radius: 15px;
+    width: 450px;
+    height: 430px;
+    margin: 170px 50px
+}
+
+.content{
+    font-size: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0 25px;
+}
+
+.title{
+   background-color: #f3f3b9;
+   height: 60px;
+}
+
+.description{
+    background-color: #f3f3b9;
+    height: 200px;
+ }
+.contentImg{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0  0 50px 0;
+}
+.img{
+    width: 40px;
+}

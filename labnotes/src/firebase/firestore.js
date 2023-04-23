@@ -21,6 +21,7 @@ export const currentUserInfo = () => auth.currentUser;
 export const addANewPost = (title, description) => addDoc(collection(db, 'notes'), {
   title,
   description,
+  today: new Date().toISOString()
 });
 
 

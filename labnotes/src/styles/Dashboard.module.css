@@ -1,26 +1,36 @@
-/*Formato para celular*/
+/*Formato para tablet*/
+
 
 .background {
-    background-image: url('../../public/img/fondo.jpg');
+    background-image: url('../../public/img/fondo2.jpg');
     background-size: cover;
     height: 100vh;
-
-
 }
+
+
 .logoTitle{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     letter-spacing: 5px;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bolder;
+    margin: -70px -15px 15px 90px;
 }
 .logo {
-    width: 80px;
+    width: 90px;
     margin-left: -20px;
     padding: 15px;
 }
 
 .logOut {
+    margin:-160px 0px 0 700px;
     width: 80px;
+
+}
+
+.favorite {
+    margin:-160px 0px 20px 580px;
+    width: 80px;
+
 }
 
 .btnUp>img {
@@ -30,51 +40,85 @@
 }
 
 .save {
-    margin: 10px -100px 0 100px;
-    width: 25px;
+    background-color: white;
+    margin: 10px 0 0 120px;
+    width: 70px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #f8f89e;
+    font-size: 15px;
+    color: gray;
+    letter-spacing: 4px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
 }
 
 
 
-.inputnotetitle {
-    background-color: rgb(253, 195, 171);
-    border-color: rgb(253, 195, 171);
+.noteTitle {
+    background-color: #ffffc4;
+    border-color: #ffffc4;
     border-radius: 15px;
     margin: 10px 0;
-    width: 200px;
-    height: 30px;
+    width: 300px;
+    height: 40px;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.inputnotedescription {
-    background-color: rgb(253, 195, 171);
-    border-color: rgb(253, 195, 171);
+.noteDescription {
+    background-color: #ffffc4;
+    border-color: #ffffc4;
     border-radius: 15px;
-    height: 90px;
-    width: 200px;
+    height: 150px;
+    width: 300px;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.gif{
+    width: 50px;
+    margin: 1px -55px;
+}
 
-
+.gifTwo{
+    width: 50px;
+    margin: 1px -55px;
+}
 
 .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    margin:180px 0;
 }
 
 .divnote {
-    background-color: lightsalmon;
-    border-color: lightsalmon;
+    background-color: #fdfd96;
+    border-color: #fdfd96;
     border-radius: 15px;
-    width: 250px;
-    height: 200px;
-    box-shadow: 5px 5px 5px wheat;
+    width: 370px;
+    height: 300px;
+    box-shadow: 5px 5px 5px #f7f7b3;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    margin:-100px 0 50px 0;
 
 }
 
+.divnoteTwo {
+    background-color: #fdfd96;
+    border-color: #fdfd96;
+    border-radius: 15px;
+    width: 370px;
+    height: 300px;
+    box-shadow: 5px 5px 5px #f7f7b3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 0px;
+}
