@@ -1,24 +1,25 @@
 .all {
-    background-image: url('../../public/img/notitas.jpg');
+    background-image: url("../../public/img/notitas.jpg");
     background-size: contain;
     height: 100vh;
-
 }
 
 .logo {
-    height: 15px;
+    width: 70px;
+    height: 70px;
 }
 
 .text {
-    font-size: 12px;
+    font-size: 50px;
     text-align: center;
-    color: black;
-    letter-spacing: 1px;
+    letter-spacing: 4px;
+    padding: 10px;
 }
 
 .bear {
-    width: 12%;
-    margin: 8px 0;
+    width: 180px;
+    height: 180px;
+    margin: 53px 0;
 
 }
 
@@ -27,24 +28,22 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10px;
-
 }
 
 .btn {
     align-self: center;
-    background-color: wheat;
+    background-color: #ACF2F2;
     color: black;
     font-weight: bolder;
-    font-size: 5px;
-    width: 14%;
-    height: 25px;
+    font-size: 18px;
+    width: 10%;
+    height: 70px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    border-color: wheat;
+    border-color: #ACF2F2;
     border-radius: 5px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 820px) and (max-width:1180px){
     .container{
         padding: 100px;
     }
@@ -55,11 +54,13 @@
         letter-spacing: 1px;
     }
     .logo {
+        width: 100px;
         height: 100px;
     }
     .bear {
         width: 30%;
-        margin: 80px 0;
+        height: 250px;
+        margin: 50px 0;
     }
 
     .btn {
@@ -67,7 +68,7 @@
         height: 150px;
         width: 19%;
         border-radius: 10px;
-        margin: 25px 10px;
+        margin: 50px 10px;
         
     }
 }

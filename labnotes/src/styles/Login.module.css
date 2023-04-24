@@ -4,17 +4,17 @@
     justify-content: center;
     align-items: center;
     background-color: #fdfd96;
-    width: 100%;
-    height: 35px;
-    font-size: 9px;
+    height: 150px;
+    font-size: 40px;
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
 
 .img {
-    width: 18px;
-    margin: 0 0px 0 -5px;
+    width: 80px;
+    height: 80px;
+    margin: 2px 0px 0 -20px;
 }
 
 .form {
@@ -22,14 +22,15 @@
     flex-direction: column;
     justify-content: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 3.5px 0;
+    margin: 20px 0;
 }
 
 .input {
-    width: 40%;
-    height: 7px;
-    font-size: 4px;
-    margin: 0 80px;
+ 
+    width: 400px;
+    height: 35px;
+    font-size: 15px;
+    margin: 0 480px;
     border: 1px solid lightgray;
     border-radius: 2px;
     background-color: lightgray;
@@ -38,22 +39,22 @@
 }
 
 .label {
-    margin: 3px 80px;
-    font-size: 4px;
+    margin: 15px 480px;
+    font-size: 18px;
 }
 
 .btnLogin {
-    font-size: 4px;
-    width: 12%;
-    height: 10px;
-    margin: 7px 118px;
+    font-size: 17px;
+    width: 10%;
+    height: 40px;
+    margin: 25px 610px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     letter-spacing: 1px;
     border-radius: 1px;
     border: 0.2px solid gray;
     background-color: #fdfd96;
     border-color: #fdfd96;
-    border-radius: 2px;
+    border-radius: 3px;
     box-shadow: 1px 1px 1px 1px #fdfd96d8;
 }
 
@@ -61,7 +62,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 20px;
     background-color: white;
     border-color: lightgray;
 
@@ -69,32 +69,33 @@
 }
 
 .btnGoogle {
-    font-size: 4px;
-    width: 20%;
-    height: 10px;
+    font-size: 20px;
+    width: 210px;
+    height: 70px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: white;
+    background-color:  #FFFFFF;
     border: 0.5px solid lightgray ;
 }
 
 .logoGoogle {
 
-    width: 5px;
-    margin: -1px 0;
+    width: 20px;
+    margin: -4px 1px;
 }
 
 .ahref {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 4px;
-    margin: 6px 0;
+    font-size: 15px;
+    margin: 20px 0;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 820px) and (max-width:1180px) {
     .header {
         background-color: #fdfd96;
-        height: 30vh;
+        height: 40vh;
+        width: 960px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -122,32 +123,32 @@
     .input {
         display: flex;
         align-self: center;
-        font-size: 25px;
+        font-size: 35px;
         border: 1px solid lightgray;
         border-radius: 15px;
         background-color: lightgray;
         height: 65px;
-        width: 70%;
+        width: 700px;
         box-shadow: 2px 2px 2px 2px gray;
-        margin: 15px 0;
+        margin: 30px 0px 0 160px;
     }
 
     .label {
-        text-align: left;
-        font-size: 30px;
-        margin: 0 15px;
+        font-size: 45px;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding-top: 15px;
+        margin: 0 150px;
     }
 
     .btnLogin {
         align-self: center;
         background-color: #fdfd96;
         color: black;
-        font-size: 33px;
+        font-size: 40px;
         letter-spacing: 2px;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         width: 300px;
-        margin-top: 30px;
+        margin: 65px 0px 0 150px ;
         height: 90px;
         border-color: #fdfd96;
         border-radius: 10px;
@@ -162,7 +163,7 @@
         background-color: white;
         width: 255px;
         border-color: lightgray;
-        margin: 0px 270px;
+        margin: 50px 350px;
     }
 
     .btnGoogle {
@@ -171,10 +172,10 @@
         align-items: center;
         color: black;
         text-align: center;
-        font-size: 32px;
+        font-size: 38px;
         height: 80px;
-        width: 355px;
-        margin: 15px 0;
+        width: 400px;
+        margin: 35px 0;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         background-color: white;
         border-color: lightgray;
@@ -182,7 +183,7 @@
 
     .logoGoogle {
         padding: 0 15px;
-        width: 35px;
+        width: 55px;
     }
 
     .ahref {
@@ -190,8 +191,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        font-size: 30px;
-        margin: 50px 0;
+        font-size: 38px;
+        margin: 40px 0px 0 150px;
     }
 
 }

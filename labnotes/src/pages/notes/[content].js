@@ -1,4 +1,10 @@
 import styles from "../../styles/content.module.css"
+import Image from "next/image"
+import lapiz from "../../../public/img/lapiz.png"
+import editar from "../../../public/img/editar.png"
+import eliminar from "../../../public/img/eliminar.png"
+import actualizar from "../../../public/img/actualizar.png"
+import regresar from "../../../public/img/regresar.png"
 import { getFirestore, doc, getDoc } from 'firebase/firestore'
 import { useRouter } from 'next/router'
 import { app } from 'labnotes/firebase/firebaseconfig'
@@ -13,15 +19,17 @@ export default function NotesReview({ notes }) {
     const deleteNotes = () => {
         const { content } = query
         deleteNote(content)
-        alert('¿Desea eliminar esta nota?')
+        confirm('¿Desea eliminar esta nota?')
     }
 
     return (
         <div className={styles.background}>
             <header>
-                <img className={styles.logo} src="/img/lapiz.png" alt=""></img>
+                <Image className={styles.logo} src={lapiz} alt=""/>
                 <p className={styles.logoTitle}>Lab Notes</p>
-                <img onClick={() => router.push('/AllNotes')} className={styles.back} src="/img/regresar.png" alt=""></img>
+                <div className={styles.divlogos}>
+                <Image onClick={() => router.push('/AllNotes')} className={styles.back} src={regresar}alt="" />
+                </div>
             </header>
             <div className={styles.container}>
                 <div className={styles.content}>
@@ -29,9 +37,9 @@ export default function NotesReview({ notes }) {
                     <p className={styles.description}>{notes.description}</p>
                 </div>
                 <div className={styles.contentImg}>
-                    <img className={styles.img} onClick={deleteNotes} src="/img/eliminar.png" alt=""></img>
-                    <img className={styles.img} src="/img/editar.png" alt=""></img>
-                    <img className={styles.img} src="/img/actualizar.png" alt=""></img>
+                    <Image className={styles.img} onClick={deleteNotes} src={eliminar} alt="" />
+                    <Image className={styles.img} src={editar} alt=""/>
+                    <Image className={styles.img} src={actualizar} alt=""/>
                 </div>
             </div>
         </div>

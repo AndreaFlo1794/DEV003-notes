@@ -1,4 +1,7 @@
 import styles from "../styles/AllNotes.module.css"
+import Image from "next/image"
+import lapiz from "../../public/img/lapiz.png"
+import mas from "../../public/img/mas.png"
 import { useRouter } from 'next/router'
 import { format } from 'date-fns';
 import { app } from "../firebase/firebaseconfig";
@@ -18,9 +21,11 @@ export default function AllNotes({ notes }) {
   return (
     <div className={styles.background}>
       <header>
-        <img className={styles.logo} src="/img/lapiz.png" alt=""></img>
+        <Image className={styles.logo} src={lapiz} alt=""/>
         <p className={styles.logoTitle}>Lab Notes</p>
-        <img onClick={() => router.push('/Dashboard')} className={styles.plus} src="/img/mas.png" alt=""></img>
+        <div className={styles.divlogos}>
+        <Image onClick={() => router.push('/Dashboard')} className={styles.plus} src={mas} alt="" />
+        </div>
       </header>
       <div className={styles.all}>
         {notes.map((content) => (
@@ -39,7 +44,7 @@ export default function AllNotes({ notes }) {
 }
 
 export const getServerSideProps = async (context) => {
-  const querySnapshot = await getDocs(collection(db, "notes"))
+  const querySnapshot = await getDocs(collection(db, "notes"), orderBy("today", "desc"))
   const docs = []
   querySnapshot.forEach((doc) => {
     docs.push({ ...doc.data(), id: doc.id })

@@ -1,5 +1,7 @@
 import { useState } from "react"
 import { useRouter } from 'next/router'
+import Image  from 'next/image'
+import lapiz from "../../public/img/lapiz.png"
 import styles from "../styles/Login.module.css"
 import { signIn, registerGoogle } from "labnotes/firebase/auth"
 
@@ -37,7 +39,7 @@ export default function Login() {
       console.log(user);
       // IdP data available using getAdditionalUserInfo(result)
       router.push('/Dashboard');
-      alert('Bienvenido a LabNotes');
+      alert('Bienvenido a LabNotes 🥳');
     }).catch((error) => {
       console.log(error);
     })
@@ -46,7 +48,7 @@ export default function Login() {
   return (
     <div>
       <header className={styles.header}>
-        <img className={styles.img} src="/img/lapiz.png" alt=""></img>
+        <Image className={styles.img} src={lapiz} alt="" />
         Lab Notes
       </header>
       <div className={styles.div}>
@@ -75,7 +77,7 @@ export default function Login() {
           <button onClick={handleLogin} type="submit" className={styles.btnLogin} >Login</button>
         </form>
         <div className={styles.containerGoogle}>
-        <button onClick={google} type="button" className={styles.btnGoogle}> <img className={styles.logoGoogle} src="/img/google.png" alt=""></img> Sign in with Google</button>
+        <button onClick={google} type="button" className={styles.btnGoogle}> <img className={styles.logoGoogle} src="/img/googleL.png" alt=""></img> Sign in with Google</button>
         </div>
         <a className={styles.ahref} href="/Register">Registrate aquí</a>
         

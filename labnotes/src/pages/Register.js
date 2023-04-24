@@ -1,5 +1,7 @@
 import { useState } from "react"
 import { useRouter } from 'next/router'
+import Image  from 'next/image'
+import lapiz from "../../public/img/lapiz.png"
 import styles from "../styles/Register.module.css"
 import { signUp } from "labnotes/firebase/auth"
 
@@ -29,7 +31,7 @@ export default function Register() {
   return (
     <div>
       <header className={styles.header} >
-        <img className={styles.img} src="/img/lapiz.png" alt=""></img>
+        <Image className={styles.img} src={lapiz} alt="" />
         Lab Notes
       </header>
       <form className={styles.form}>
