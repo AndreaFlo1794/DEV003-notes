@@ -1,108 +1,197 @@
-.header{
-    background-color: #fdfd96   ;
-    height: 30vh;
+.header {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 70px;
-    font-weight: bolder;
-}
-
-.img{
-    height: 180px;
-    width: 180px;
-    margin-left: -20px;
-    padding: 15px;
-}
-
-
-.form{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-around;
-    align-content: center;
-    margin: 40px 0; 
-    
-}
-
-.input{ 
-    display: flex;
-    align-self: center;
-    font-size: 25px;
-    border: 1px solid lightgray;
-    border-radius: 15px;
-    background-color: lightgray;
-    height: 65px;
-    width: 80%;
-    box-shadow: 2px 2px 2px 2px gray;
-    margin: 15px 0;
-}
-
-.label{
-    text-align: left;
-    font-size: 30px;
-    /* font-weight: bold; */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
-}
-
-.btnLogin{
-    align-self: center;
     background-color: #fdfd96;
-    color: black;
-    font-size: 33px;
-    letter-spacing: 2px;
+    width: 100%;
+    height: 35px;
+    font-size: 9px;
+    font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    width: 300px;
-    margin-top: 30px;
-    height: 90px;
+
+}
+
+.img {
+    width: 18px;
+    margin: 0 0px 0 -5px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 3.5px 0;
+}
+
+.input {
+    width: 40%;
+    height: 7px;
+    font-size: 4px;
+    margin: 0 80px;
+    border: 1px solid lightgray;
+    border-radius: 2px;
+    background-color: lightgray;
+    box-shadow: 0.5px 0.5px 0.5px 0.5px gray;
+
+}
+
+.label {
+    margin: 3px 80px;
+    font-size: 4px;
+}
+
+.btnLogin {
+    font-size: 4px;
+    width: 12%;
+    height: 10px;
+    margin: 7px 118px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+    border-radius: 1px;
+    border: 0.2px solid gray;
+    background-color: #fdfd96;
     border-color: #fdfd96;
-    border-radius: 10px;
+    border-radius: 2px;
     box-shadow: 1px 1px 1px 1px #fdfd96d8;
 }
 
-
-.containerGoogle{
+.containerGoogle {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0 20px;
     background-color: white;
-    width: 255px;
     border-color: lightgray;
-    margin: 0px 270px;
-    
+
 
 }
 
-.btnGoogle{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    text-align: center;
-    font-size: 32px;
-    height: 80px;
-    width: 355px;
-    margin: 15px 0;
+.btnGoogle {
+    font-size: 4px;
+    width: 20%;
+    height: 10px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: white;
-    border-color: lightgray; 
+    border: 0.5px solid lightgray ;
 }
 
-.logoGoogle{
-    padding: 0 15px;
-    width: 35px;
+.logoGoogle {
+
+    width: 5px;
+    margin: -1px 0;
 }
 
-.ahref{
+.ahref {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
-    margin: 50px 0;
+    font-size: 4px;
+    margin: 6px 0;
 }
 
+@media only screen and (min-width: 768px) {
+    .header {
+        background-color: #fdfd96;
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 70px;
+        font-weight: bolder;
+    }
+
+    .img {
+        height: 180px;
+        width: 180px;
+        margin-left: -20px;
+        padding: 15px;
+    }
+
+    .form {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: center;
+        margin: 40px 0;
+    }
+
+    .input {
+        display: flex;
+        align-self: center;
+        font-size: 25px;
+        border: 1px solid lightgray;
+        border-radius: 15px;
+        background-color: lightgray;
+        height: 65px;
+        width: 70%;
+        box-shadow: 2px 2px 2px 2px gray;
+        margin: 15px 0;
+    }
+
+    .label {
+        text-align: left;
+        font-size: 30px;
+        margin: 0 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .btnLogin {
+        align-self: center;
+        background-color: #fdfd96;
+        color: black;
+        font-size: 33px;
+        letter-spacing: 2px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        width: 300px;
+        margin-top: 30px;
+        height: 90px;
+        border-color: #fdfd96;
+        border-radius: 10px;
+        box-shadow: 1px 1px 1px 1px #fdfd96d8;
+    }
+
+    .containerGoogle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        width: 255px;
+        border-color: lightgray;
+        margin: 0px 270px;
+    }
+
+    .btnGoogle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        text-align: center;
+        font-size: 32px;
+        height: 80px;
+        width: 355px;
+        margin: 15px 0;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        background-color: white;
+        border-color: lightgray;
+    }
+
+    .logoGoogle {
+        padding: 0 15px;
+        width: 35px;
+    }
+
+    .ahref {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        margin: 50px 0;
+    }
+
+}
