@@ -8,7 +8,7 @@ import { app } from "../firebase/firebaseconfig";
 import {
   collection,
   getDocs,
-  getFirestore, orderBy
+  getFirestore, doc, updateDoc
 } from 'firebase/firestore';
 
 // -------------Función para identificar el usuario------------
@@ -17,7 +17,7 @@ const db = getFirestore(app);
 
 export default function AllNotes({ notes }) {
   const router = useRouter()
-
+  
   return (
     <div className={styles.background}>
       <header>
@@ -44,7 +44,7 @@ export default function AllNotes({ notes }) {
 }
 
 export const getServerSideProps = async (context) => {
-  const querySnapshot = await getDocs(collection(db, "notes"), orderBy("today", "desc"))
+  const querySnapshot = await getDocs(collection(db, "notes"))
   const docs = []
   querySnapshot.forEach((doc) => {
     docs.push({ ...doc.data(), id: doc.id })
@@ -54,4 +54,15 @@ export const getServerSideProps = async (context) => {
       notes: docs
     }
   }
+}
+
+export const updateNote = async(id, title, content) => {
+  const noteRef = doc(db, "notes", id);
+  const now = new Date();
+  const updatedNote = {
+    title: title,
+    content: content,
+    today: now.getTime()
+  }
+  await updateDoc(noteRef, updatedNote);
 }
