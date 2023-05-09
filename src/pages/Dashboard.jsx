@@ -1,8 +1,8 @@
 import styles from "../styles/Dashboard.module.css"
 import Image  from 'next/image'
-import lapiz from "../../public/img/lapiz.png"
 import cerrar from "../../public/img/cerrar-sesion.png"
 import cheque from "../../public/img/cheque.png"
+import Header from "./components/Header";
 import { useState } from "react"
 import { useRouter } from 'next/router'
 import { logOut } from "labnotes/firebase/auth"
@@ -40,14 +40,12 @@ export default function Dashboard() {
   }
   return (
     <div className={styles.background}>
-      <header>
-        <Image className={styles.logo} src={lapiz} alt="" />
-        <p className={styles.logoTitle}>Lab Notes</p>
+      <Header />
         <div className={styles.divlogos}>
         <Image onClick={handleSignOut} className={styles.logOut} src={cerrar} alt=""/>
         <Image onClick={()=>router.push('/AllNotes')} className={styles.favorite} src={cheque} alt=""/>
         </div>
-      </header>
+      
       {/* <h4> Hola! {user?.email} </h4> */}
       <div className={styles.container}>
           <div className={styles.divnote}>
